@@ -1,4 +1,3 @@
-import { Test, TestingModule } from '@nestjs/testing';
 import { PasswordService } from './password.service';
 import { Options } from '../interfaces/password';
 
@@ -11,7 +10,7 @@ describe('PasswordService', () => {
     upperCase: true,
     numbers: false,
     symbols: false,
-  }
+  };
 
   beforeEach(async () => {
     service = new PasswordService();

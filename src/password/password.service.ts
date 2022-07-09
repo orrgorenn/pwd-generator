@@ -18,10 +18,7 @@ export function generateKey(options: Options): string {
   return key;
 }
 
-export function generatePassword(
-  key: string,
-  length: number,
-): Password {
+export function generatePassword(key: string, length: number): Password {
   let randPassword = '';
   for (let i = 0; i < length; i++) {
     const randPos = Math.floor(Math.random() * key.length);

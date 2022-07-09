@@ -1,4 +1,3 @@
-import { Test, TestingModule } from '@nestjs/testing';
 import { PasswordController } from './password.controller';
 import { Options } from '../interfaces/password';
 
