@@ -25,7 +25,7 @@ $ npm install
 ## Usage
 ```
 $ npm run start:dev // watch for changes
-$ npm build // build the project
+$ npm run build // build the project
 ```
 
 ## License
