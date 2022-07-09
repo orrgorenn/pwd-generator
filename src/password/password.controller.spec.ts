@@ -1,18 +1,27 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { PasswordController } from './password.controller';
+import { Options } from '../interfaces/password';
 
 describe('PasswordController', () => {
   let controller: PasswordController;
+  let passwordService: any;
+
+  const options: Options = {
+    lowerCase: true,
+    upperCase: true,
+    numbers: false,
+    symbols: false,
+  };
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      controllers: [PasswordController],
-    }).compile();
-
-    controller = module.get<PasswordController>(PasswordController);
+    passwordService = {
+      getPassword: jest.fn(),
+    };
+    controller = new PasswordController(passwordService);
   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
+  it('Service should be called with correct params', () => {
+    const pass = controller.getPassword(options, 10);
+    expect(passwordService.getPassword).toBeCalledWith(options, 10);
   });
 });

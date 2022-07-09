@@ -1,18 +1,28 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { PasswordService } from './password.service';
+import { Options } from '../interfaces/password';
 
 describe('PasswordService', () => {
   let service: PasswordService;
+  let pass;
+
+  const options: Options = {
+    lowerCase: true,
+    upperCase: true,
+    numbers: false,
+    symbols: false,
+  }
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [PasswordService],
-    }).compile();
-
-    service = module.get<PasswordService>(PasswordService);
+    service = new PasswordService();
+    pass = service.getPassword(options, 10);
   });
 
-  it('should be defined', () => {
-    expect(service).toBeDefined();
+  it('should have property password', () => {
+    expect(pass).toHaveProperty('password');
+  });
+
+  it('should have correct length', () => {
+    expect(pass.password).toHaveLength(10);
   });
 });
