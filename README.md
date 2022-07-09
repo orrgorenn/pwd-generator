@@ -17,7 +17,7 @@ Clone the repository
 $ git clone git@github.com:orrgorenn/pwd-generator.git
 ```
 
-Then ```cd``` to the ```password-generator``` directory, and install all dependencies
+Then ```cd``` to the ```pwd-generator``` directory, and install all dependencies
 ```
 $ npm install
 ```
