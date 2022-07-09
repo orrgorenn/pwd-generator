@@ -1,10 +1,25 @@
 {
   "name": "pwd-generator",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Nest and Angular password generator application",
+  "author": "Orr Goren",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orrgorenn/pwd-generator.git"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "nest",
+    "angular",
+    "restapi"
+  ],
+  "bugs": {
+    "url": "https://github.com/orrgorenn/pwd-generator/issues"
+  },
+  "homepage": "https://github.com/orrgorenn/pwd-generator#readme",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",

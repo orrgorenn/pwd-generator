@@ -14,7 +14,7 @@ Password Generator is password generating app built with Express.js and Angular.
 
 Clone the repository
 ```
-$ git clone git@github.com:orrgorenn/pwd_generator.git
+$ git clone git@github.com:orrgorenn/pwd-generator.git
 ```
 
 Then ```cd``` to the ```password-generator``` directory, and install all dependencies
