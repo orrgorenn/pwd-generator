@@ -41,7 +41,7 @@ $ npm run build // build project
 The [MIT](./LICENSE) License.
 
 ## Contributions
-Please see the [contributing guidelines](./CON).
+Please see the [contributing guidelines](./CONTRIBUTING.md).
 
 ## Tests
 Run tests
