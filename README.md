@@ -51,5 +51,5 @@ $ npm test
 
 Run coverage tests
 ```
-$ npm test:coverage
+$ npm run test:cov
 ```
