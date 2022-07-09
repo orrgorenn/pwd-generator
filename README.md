@@ -23,18 +23,9 @@ $ npm install
 ```
 
 ## Usage
-
-### Server
 ```
-$ npm start // run with ts-node
-$ npm run start:dev // run with nodemon
-```
-
-### Client
-```
-$ cd client
-$ npm start
-$ npm run build // build project
+$ npm run start:dev // watch for changes
+$ npm build // build the project
 ```
 
 ## License
