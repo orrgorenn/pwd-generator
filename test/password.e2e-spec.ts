@@ -16,9 +16,7 @@ describe('AppController (e2e)', () => {
   });
 
   it('/password (GET) Invalid', () => {
-    return request(app.getHttpServer())
-      .get('/password')
-      .expect(400);
+    return request(app.getHttpServer()).get('/password').expect(400);
   });
 
   it('/password (GET) Valid', () => {
