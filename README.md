@@ -2,7 +2,7 @@
 [![semantic-release](https://img.shields.io/badge/semantic-release-e10079.svg?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 ## Description
-Password Generator is password generating app built with Express.js and Angular.
+Pwd Generator is Password Generator API built with Nest.js.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -23,18 +23,9 @@ $ npm install
 ```
 
 ## Usage
-
-### Server
 ```
-$ npm start // run with ts-node
-$ npm run start:dev // run with nodemon
-```
-
-### Client
-```
-$ cd client
-$ npm start
-$ npm run build // build project
+$ npm run start:dev // watch for changes
+$ npm run build // build the project
 ```
 
 ## License
@@ -52,4 +43,9 @@ $ npm test
 Run coverage tests
 ```
 $ npm run test:cov
+```
+
+Run e2e tests
+```
+npm run test:e2e
 ```
